@@ -1,9 +1,167 @@
+Əsas kontentə keçin
+Google Classroom
+Classroom
+PTP101
+Əsas səhifə
+Təqvim
+Qeydiyyatdan keçildi
+Edilməli tapşırıqlar
+P
+PTP101
+Arxivləşdirilmiş siniflər
+Nizamlar
+33.react-mini-project
+Kanan Amirov
+•
+Dünən (Redaktə edildi: Dünən)
+Mini Project
+•
+100 bal
+Təhvil tarixi: 16 fev, 08:59
+Tapşırıq ilə bağlı detallar və json-server üçün lazım olan data aşağıda əlavə edilib!
+
+folder structure aşağıdakı kimi qura bilərsiniz.
+
+src/
+│
+├── context/              # Global state
+│
+├── pages/
+│   ├── admin/
+│   │   ├── Dashboard.jsx
+│   │   ├── Products.jsx
+│   │   └── Blogs.jsx
+│   │
+│   └── client/
+│       ├── Home.jsx
+│       ├── Products.jsx
+│       ├── ProductDetail.jsx
+│       └── Blogs.jsx
+│
+├── components/
+│   ├── common/           # Hər iki tərəf üçün ortaq
+│   │   ├── Button.jsx
+│   │   ├── Modal.jsx
+│   │   └── Input.jsx
+│   │
+│   ├── admin/            # Adminə xüsusi komponentlər
+│   │
+│   └── client/           # Clientə xüsusi komponentlər
+│
+├── services/             # API çağırışları
+│   ├── productService.js
+│   └── blogService.js
+│
+├── validation/           # Yup və s.
+│   ├── productSchema.js
+│   └── blogSchema.js
+│
+├── constants/            # Sabitlər
+│   └── api.js
+││
+├── styles/
+│
+├── App.jsx
+└── main.jsx
+
+Uğurlar!
+mini-project.pdf
+PDF
+
+db.json
+Naməlum
+
+Sinif şərhləri
+İşiniz
+Təyin edildi
+Fərdi şərhlər
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "products": [
+    {
+      "id": 1,
+      "name": "Bell Pepper",
+      "category": "Vegetables",
+      "price": 80,
+      "oldPrice": 120,
+      "discount": 30,
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6"
+    },
+    {
+      "id": 2,
+      "name": "Strawberry",
+      "category": "Fruits",
+      "price": 120,
+      "oldPrice": 120,
+      "discount": 0,
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd7"
+    },
+    {
+      "id": 3,
+      "name": "Green Beans",
+      "category": "Vegetables",
+      "price": 120,
+      "oldPrice": 120,
+      "discount": 0,
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd8"
+    },
+    {
+      "id": 4,
+      "name": "Purple Cabbage",
+      "category": "Vegetables",
+      "price": 120,
+      "oldPrice": 120,
+      "discount": 0,
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd9"
+    },
+    {
+      "id": 5,
+      "name": "Tomato",
+      "category": "Vegetables",
+      "price": 80,
+      "oldPrice": 120,
+      "discount": 30,
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbda"
+    },
+    {
+      "id": 6,
+      "name": "Broccoli",
+      "category": "Vegetables",
+      "price": 120,
+      "oldPrice": 120,
+      "discount": 0,
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbdb"
+    },
+    {
+      "id": 7,
+      "name": "Carrots",
+      "category": "Vegetables",
+      "price": 120,
+      "oldPrice": 120,
+      "discount": 0,
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbdc"
+    },
+    {
+      "id": 8,
+      "name": "Fruit Juice",
+      "category": "Juice",
+      "price": 120,
+      "oldPrice": 120,
+      "discount": 0,
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbdd"
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Why Organic Food is Better",
+      "description": "Organic foods are grown without harmful pesticides and are healthier for your body.",
+      "date": "2024-05-12",
+      "position": "Health",
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbdd"
+    }
+  ]
 }
+
+
+db.json
+db.json göstərilir
